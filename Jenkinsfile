@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         BOOTSTRAP_HOME = '/var/lib/jenkins/workspace/bootstrap/bootstrap-linux'
-    }
+        }
 
     stages {
         stage('Build') {
@@ -14,7 +14,7 @@ pipeline {
                 }
             }
         }
-        stage('Test') {
+    stage('Config') {
             steps {
                 // JENKINSHOME is just a name to help readability
                 //withEnv(['PATH+BOOTSTRAPHOME=/var/lib/jenkins/workspace/bootstrap/bootstrap-linux']) {
@@ -23,5 +23,4 @@ pipeline {
                 echo " $BOOTSTRAP_HOME "
              }
         }
-    }
 }
