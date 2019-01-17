@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    // JENKINSHOME is just a name to help readability
-    withEnv(['PATH+BOOTSTRAPHOME=/var/lib/jenkins/workspace/bootstrap/bootstrap-linux']) {
     stages {
+        // JENKINSHOME is just a name to help readability
+        withEnv(['PATH+BOOTSTRAPHOME=/var/lib/jenkins/workspace/bootstrap/bootstrap-linux']) {
         stage('Build') {
             steps {
                 echo "PATH is: $PATH"
