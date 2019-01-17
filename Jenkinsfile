@@ -1,31 +1,22 @@
-env.agentName = ""
-
-branch_name = "10.1.0"
 pipeline {
-    agent none
+    agent any
 
     stages {
-        stage('Prep') {
+        stage('Build') {
             steps {
-                script {
-                    println branch_name
-                    if ("${branch_name}" == "9.2.0") {
-                        env.agentName = "9.2agent"
-                    } else {
-                        env.agentName = "10.1agent"
-                    }
+                // JENKINSHOME is just a name to help readability
+                withEnv(['PATH+BOOTSTRAPHOME=/var/lib/jenkins/workspace/bootstrap/bootstrap-linux']) {
+                echo "PATH is: $PATH"
+                
+                sh " mvn-iib.sh "
                 }
             }
         }
-
-        stage('Finish') {
+        stage('Test') {
             steps {
-                node (agentName as String) { println env.agentName }
-                script {
-                    println agentName
-                }
-            }
+                
+                    sh '/var/lib/jenkins/workspace/ESB_Repo/bootstrap/mvn-iib.sh'
+             }
         }
-
     }
 }
