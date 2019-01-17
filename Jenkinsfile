@@ -5,10 +5,7 @@ pipeline {
             steps {
                 // JENKINSHOME is just a name to help readability
                 withEnv(['PATH+BOOTSTRAPHOME=/var/lib/jenkins/workspace/bootstrap/bootstrap-linux']) {
-
                 echo "PATH is: $PATH"
-                
-                sh " mvn-iib.sh "
                 }
             }
         }
@@ -16,7 +13,8 @@ pipeline {
             steps {
                 // JENKINSHOME is just a name to help readability
                 //withEnv(['PATH+BOOTSTRAPHOME=/var/lib/jenkins/workspace/bootstrap/bootstrap-linux']) {
-                sh ( mvn-iib.sh )
+                //sh ( mvn-iib.sh )
+                echo "PATH is: $PATH"
              }
         }
     }
