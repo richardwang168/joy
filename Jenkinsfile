@@ -11,10 +11,9 @@ pipeline {
                 //withEnv(['PATH+BOOTSTRAPHOME=/var/lib/jenkins/workspace/bootstrap/bootstrap-linux']) {
                 //echo "PATH is: $PATH"
                 echo " $BOOTSTRAP_HOME "
-                }
             }
         }
-    stage('Config') {
+        stage('Config') {
             steps {
                 // JENKINSHOME is just a name to help readability
                 //withEnv(['PATH+BOOTSTRAPHOME=/var/lib/jenkins/workspace/bootstrap/bootstrap-linux']) {
@@ -23,4 +22,5 @@ pipeline {
                 echo " $BOOTSTRAP_HOME "
              }
         }
+    }
 }
