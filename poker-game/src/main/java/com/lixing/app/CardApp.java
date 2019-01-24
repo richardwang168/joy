@@ -1,7 +1,6 @@
 package com.lixing.app;
 /**
  * <pre>
- * THis is a demo Java program created for R&P interview, I'd like to add few lines of comments:
  * 
  *  (1) It's not the shortest version, added some comments and some codes for possible extending work.
  * 
