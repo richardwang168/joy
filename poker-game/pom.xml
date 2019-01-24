@@ -3,7 +3,7 @@
   <groupId>com.lixing.app</groupId>
   <artifactId>poker-game</artifactId>
   <packaging>jar</packaging>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <name>poker-game</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -38,12 +38,18 @@
 		        <configuration>
 					<username>${git.user}</username>
 					<password>${git.password}</password>
-				  <!--
-		          <flowInitContext>
-		            <masterBranchName>master-test</masterBranchName>
-		            <developBranchName>deploy-test</developBranchName>
-		          </flowInitContext>
-				  -->
+					  <pushReleases>true</pushReleases>
+					  <keepBranch>false</keepBranch>
+					  <autoVersionSubmodules>true</autoVersionSubmodules>
+					  <noTag>true</noTag>
+					  <allowUntracked>true</allowUntracked>
+					  <pullDevelop>true</pullDevelop>
+					  <pullMaster>true</pullMaster>
+					  <allowSnapshots>true</allowSnapshots>
+					  <flowInitContext>
+						<masterBranchName>master</masterBranchName>
+						<developBranchName>develop</developBranchName>
+						</flowInitContext>
 		        </configuration> 
 			</plugin>
 			<plugin>
