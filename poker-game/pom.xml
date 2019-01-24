@@ -39,9 +39,9 @@
 					<username>${git.user}</username>
 					<password>${git.password}</password>
 					  <pushReleases>true</pushReleases>
-					  <keepBranch>false</keepBranch>
+					  <keepBranch>true</keepBranch>
 					  <autoVersionSubmodules>true</autoVersionSubmodules>
-					  <noTag>true</noTag>
+					  <noTag>false</noTag>
 					  <allowUntracked>true</allowUntracked>
 					  <pullDevelop>true</pullDevelop>
 					  <pullMaster>true</pullMaster>
