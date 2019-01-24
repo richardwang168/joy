@@ -1,6 +1,7 @@
 package com.lixing.app;
 /**
  * <pre>
+ *  This project is used for verification purpose of MAVEN JGitFlow plugin only.
  * 
  *  (1) It's not the shortest version, added some comments and some codes for possible extending work.
  * 
