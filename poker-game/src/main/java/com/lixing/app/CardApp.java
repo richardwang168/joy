@@ -129,6 +129,6 @@ public class CardApp {
 		// Last but not least, Deal a card from the top of the deck and get it displayed
 		System.out.println("<<<<<<<<");
 		System.out.println(play.dealCard().showFace());
-		System.out.println(">>>>>>>>");
+		System.out.println("********");
 	}
 }
