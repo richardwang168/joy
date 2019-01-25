@@ -2,6 +2,9 @@ package com.lixing.app;
 /**
  * <pre>
  *  This project is used for verification purpose of MAVEN JGitFlow plugin only.
+ *
+ *  JGitflow release start and finish must be used after you have done some updates and commit it to the repo.
+ *  If nothing updated between two times you run release-start and release-finish, the second time will fail.
  * 
  *  (1) It's not the shortest version, added some comments and some codes for possible extending work.
  * 
