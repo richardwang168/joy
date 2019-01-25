@@ -39,7 +39,7 @@
 					<username>${git.user}</username>
 					<password>${git.password}</password>
 					  <pushReleases>true</pushReleases>
-					  <keepBranch>true</keepBranch>
+					  <keepBranch>false</keepBranch>
 					  <autoVersionSubmodules>true</autoVersionSubmodules>
 					  <noTag>false</noTag>
 					  <allowUntracked>true</allowUntracked>
