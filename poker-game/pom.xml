@@ -88,16 +88,16 @@
 	<distributionManagement>
 		<snapshotRepository>
 			<uniqueVersion>false</uniqueVersion>
-			<id>ext-snapshot-local</id>
-			<name>ext-snapshot-local</name>
-			<url>http://fsr3vlesb2:8083/artifactory/ext-snapshot-local</url>
+			<id>lib-snapshot-local</id>
+			<name>lib-snapshot-local</name>
+			<url>http://phy0x05.itfromblighty:8082/artifactory/lib-snapshot-local</url>
 			<layout>default</layout>
 		</snapshotRepository>
 		<repository>
 			<uniqueVersion>true</uniqueVersion>
-			<id>ext-release-local</id>
-			<name>ext-release-local</name>
-			<url>http://fsr3vlesb2:8083/artifactory/ext-release-local</url>
+			<id>lib-release-local</id>
+			<name>lib-release-local</name>
+			<url>http://phy0x05.itfromblighty:8082/artifactory/lib-release-local</url>
 			<layout>default</layout>
 		</repository>
 	</distributionManagement>	<!-- To use the report goals in your POM or parent POM -->
